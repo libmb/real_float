@@ -1,4 +1,19 @@
-#include "mb_core_type.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   mb_real_float_internal.h                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: Juyeong Maing <jmaing@student.42seoul.kr>  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/14 00:25:08 by Juyeong Maing     #+#    #+#             */
+/*   Updated: 2024/03/14 00:27:23 by Juyeong Maing    ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef MB_REAL_FLOAT_INTERNAL_H
+# define MB_REAL_FLOAT_INTERNAL_H
+
+# include "mb_core_type.h"
 
 void	mb_real_float_free(
 			void *context,
@@ -33,3 +48,5 @@ struct s_mb_real
 {
 	float	value;
 };
+
+#endif
