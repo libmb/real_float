@@ -4,7 +4,7 @@
 
 t_err	mb_real_float_clone(
 	void *context,
-	t_mb_real *self,
+	const t_mb_real *self,
 	t_mb_real **out
 )
 {

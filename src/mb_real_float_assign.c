@@ -3,7 +3,7 @@
 t_err	mb_real_float_assign(
 	void *context,
 	t_mb_real **self,
-	t_mb_real *other
+	const t_mb_real *other
 )
 {
 	(void)context;

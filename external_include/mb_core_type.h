@@ -25,19 +25,19 @@ typedef void				(*t_mb_real_v_free)(
 
 typedef t_err				(*t_mb_real_v_clone)(
 								void *context,
-								t_mb_real *self,
+								const t_mb_real *self,
 								t_mb_real **out);
 
 typedef t_err				(*t_mb_real_v_assign)(
 								void *context,
 								t_mb_real **self,
-								t_mb_real *other);
+								const t_mb_real *other);
 
 typedef t_err				(*t_mb_real_v_binary)(
 								void *context,
 								t_mb_real **mut,
-								t_mb_real *lhs,
-								t_mb_real *rhs);
+								const t_mb_real *lhs,
+								const t_mb_real *rhs);
 
 typedef t_err				(*t_mb_real_v_negate)(
 								void *context,
@@ -45,7 +45,7 @@ typedef t_err				(*t_mb_real_v_negate)(
 
 typedef t_err				(*t_mb_real_v_check)(
 								void *context,
-								t_mb_real *self,
+								const t_mb_real *self,
 								bool *out);
 
 typedef struct s_mb_real_type
@@ -55,9 +55,9 @@ typedef struct s_mb_real_type
 	t_mb_real_v_clone	clone;
 	t_mb_real_v_assign	assign;
 	t_mb_real_v_binary	add;
-	t_mb_real_v_binary	multiply;
+	t_mb_real_v_binary	mul;
 	t_mb_real_v_negate	negate;
-	t_mb_real_v_check	is_greater_than_or_equal_to_four;
+	t_mb_real_v_check	is_ge4;
 	const t_mb_real		*zero;
 	const t_mb_real		*one;
 }	t_mb_real_type;
