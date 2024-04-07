@@ -6,7 +6,7 @@
 /*   By: Juyeong Maing <jmaing@student.42seoul.kr>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/14 00:24:55 by Juyeong Maing     #+#    #+#             */
-/*   Updated: 2024/03/14 00:24:55 by Juyeong Maing    ###   ########.fr       */
+/*   Updated: 2024/04/08 02:22:37 by Juyeong Maing    ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 #include <stdlib.h>
 
-t_err	mb_real_float_clone(
+t_mb_err	mb_real_float_clone(
 	void *context,
 	const t_mb_real *self,
 	t_mb_real **out
